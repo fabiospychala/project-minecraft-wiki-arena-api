@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/*   font-family: "Rubik", sans-serif;   */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Rubik", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url("/asset/image/LaineNoir.png");
+    padding: 16px 24px;
+}
+
+.Logo_Container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.Logo {
+	width: 40px;
+}
+
+.Logo_text {
+	color: white;
+}
