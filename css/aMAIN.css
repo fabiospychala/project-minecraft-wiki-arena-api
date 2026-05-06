@@ -2,7 +2,7 @@
 /*   font-family: "Rubik", sans-serif;   */
 
 :root {
-	--For-back: 100px;
+	--For-back: 130px;
 }
 
 * {
@@ -14,6 +14,10 @@
 input {
 	border: none;
 	background-color: transparent;
+}
+
+img {
+	max-width: 100%;
 }
 
 body {
@@ -36,6 +40,7 @@ header {
 }
 
 main {
+	padding: calc(var(--For-back) + 60px) 0px 0px 0px;
 	min-height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -72,7 +77,7 @@ header > a {
 	justify-content: center;
 	gap: 6px;
 	padding: 12px 16px;
-	border-radius: 16px;
+	border-radius: 9999px;
 	background-color: white;
 }
 
@@ -121,6 +126,11 @@ header > a {
 	background-repeat: repeat-x;
 }
 
+.LinkSectHead a {
+	text-decoration: none;
+	color: white;
+}
+
 .LBLnormal {
 	display: flex;
 	flex-direction: row;
@@ -130,7 +140,7 @@ header > a {
 }
 
 .selectPage {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 .card-main-body {
@@ -149,5 +159,19 @@ header > a {
 		align-items: center;
 		justify-content: center;
 		gap: 12px;
+	}
+
+	.LinkSectHead {
+		gap: 20px;
+	}
+	
+	.ciel img {
+		width: 80%;
+	}
+}
+@media screen and (width > 1023px) {
+
+	.LinkSectHead {
+		gap: 50px;
 	}
 }
