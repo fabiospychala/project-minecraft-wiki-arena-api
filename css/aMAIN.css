@@ -148,6 +148,27 @@ header > a {
 	background-color: white;
 }
 
+.yellow {
+	background-color: #f5e2bc;
+	border-left: solid 5px;
+	border-color: #c2ac7f;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 10px;
+	padding-top: 8px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+}
+
+.bold {
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "Rubik";
+	font-style: SemiBold;
+}
+
 @media screen and (width > 767px) {
 	.onlyMobile {
 		display: none;
@@ -164,13 +185,12 @@ header > a {
 	.LinkSectHead {
 		gap: 20px;
 	}
-	
+
 	.ciel img {
 		width: 80%;
 	}
 }
 @media screen and (width > 1023px) {
-
 	.LinkSectHead {
 		gap: 50px;
 	}
