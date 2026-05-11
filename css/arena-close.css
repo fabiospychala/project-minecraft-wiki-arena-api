@@ -1,0 +1,27 @@
+h1 {
+	color: #3a3a3a;
+	font-weight: 300;
+	font-style: Light;
+	font-size: 48px;
+}
+.open-or-close {
+  text-align: center;
+	background-color: #4f8c69;
+	padding: 4px 8px;
+	color: white;
+	font-size: 12px;
+	font-weight: 700;
+  width: max-content;
+  border-radius: 8px;
+}
+
+.titre-arena-open {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-main-body {
+  gap: 24px;
+}
