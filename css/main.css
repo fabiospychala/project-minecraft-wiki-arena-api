@@ -257,6 +257,10 @@ dialog {
 		gap: 12px;
 	}
 
+	.onlyTabletAndMoretab {
+		display: block;
+	}
+
 	.LinkSectHead {
 		gap: 20px;
 	}
