@@ -122,7 +122,7 @@
 			<section class="card-main-body">
 				<article class="titre-arena-open">
 					<h1>Arena</h1>
-					<div class="open-or-close">OPEN</div>
+					<div class="open-or-close close">CLOSE</div>
 				</article>
 				<p>
 					Choose an entity to spawn inside the
@@ -132,14 +132,14 @@
 					<div>
 						<div>
 							<h4>Entity</h4>
-							<select class="selectEntitie" name="entity" id="">
+							<select class="selectEntitie greyOnClose" name="entity" id="">
 								<option value="">choose</option>
 							</select>
 						</div>
 						<div>
 							<h4>X Coordinate</h4>
 							<input
-								class="INPnumber"
+								class="INPnumber greyOnClose"
 								type="number"
 								placeholder="255.2"
 								name="Xcoord"
@@ -148,14 +148,14 @@
 						<div>
 							<h4>Z Coordinate</h4>
 							<input
-								class="INPnumber"
+								class="INPnumber greyOnClose"
 								type="number"
 								placeholder="126.7"
 								name="Zcoord"
 							/>
 						</div>
 					</div>
-					<button class="BTNspawn">SPAWN</button>
+					<button class="BTNspawn greyOnClose">SPAWN</button>
 				</form>
 				<h3 class="titleH3">Arena entities</h3>
 				<hr class="hr" />
@@ -167,43 +167,81 @@
 					</caption>
 					<thead>
 						<tr>
-							<th>
+							<th class="grey">
 								<span class="onlyMobile">Ent..</span>
 								<span class="onlyTabletAndMoreTab">Entity</span>
 							</th>
-							<th>
+							<th class="grey">
 								<span class="onlyMobile">Na..</span>
 								<span class="onlyTabletAndMoreTab">Name</span>
 							</th>
-							<th>
+							<th class="grey">
 								<span class="onlyMobile">X</span>
 								<span class="onlyTabletAndMoreTab">X Coordinate</span>
 							</th>
-							<th>
+							<th class="grey">
 								<span class="onlyMobile">Y</span>
 								<span class="onlyTabletAndMoreTab">Y Coordinate</span>
 							</th>
-							<th>
+							<th class="grey">
 								<span class="onlyMobile">Stre..</span>
 								<span class="onlyTabletAndMoreTab">Strength</span>
 							</th>
-							<th>del</th>
+							<th class="grey">del</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><img src="/asset/exmple/zombie.png" alt="zombie" /></td>
-							<td>Zombie</td>
-							<td>158.2</td>
-							<td>248.2</td>
-							<td>12</td>
-							<td><button type="button">DELETE</button></td>
+							<td class="grey">
+								<img src="/asset/exmple/zombie.png" alt="zombie" />
+							</td>
+							<td class="grey">Zombie</td>
+							<td class="grey">158.2</td>
+							<td class="grey">248.2</td>
+							<td class="grey">12</td>
+							<td class="grey">
+								<button class="delete greyOnClose" type="button">DELETE</button>
+							</td>
+						</tr>
+						<tr>
+							<td class="grey">
+								<img src="/asset/exmple/2dTaTou.png" alt="tatou" />
+							</td>
+							<td class="grey">Armadillo</td>
+							<td class="grey">155.6</td>
+							<td class="grey">245.2</td>
+							<td class="grey">0</td>
+							<td class="grey">
+								<button class="delete greyOnClose" type="button">DELETE</button>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 				<h3 class="titleH3">Arena map</h3>
 				<hr class="hr" />
-				<div class="aren"></div>
+				<div class="aren">
+					<div class="mobPoAbso">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 22 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M21 12H20C20 8.13 16.87 5 13 5H12V3.73C12.6 3.39 13 2.74 13 2C13 0.9 12.11 0 11 0C9.89 0 9 0.9 9 2C9 2.74 9.4 3.39 10 3.73V5H9C5.13 5 2 8.13 2 12H1C0.45 12 0 12.45 0 13V16C0 16.55 0.45 17 1 17H2V18C2 19.11 2.9 20 4 20H18C19.11 20 20 19.11 20 18V17H21C21.55 17 22 16.55 22 16V13C22 12.45 21.55 12 21 12ZM6.5 16C5.12 16 4 14.88 4 13.5C4 12.68 4.4 11.96 5 11.5L8.83 14.38C8.5 15.32 7.57 16 6.5 16ZM15.5 16C14.43 16 13.5 15.32 13.17 14.38L17 11.5C17.6 11.96 18 12.68 18 13.5C18 14.88 16.88 16 15.5 16Z"
+								fill="#F25959"
+							/>
+						</svg>
+						<div class="divCoord">
+							<p class="coord">
+								<span id="coordX">135</span>
+								,&nbsp
+								<span id="coordY">246</span>
+							</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<dialog id="Menu">
