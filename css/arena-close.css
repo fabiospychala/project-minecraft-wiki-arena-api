@@ -16,6 +16,19 @@ caption {
 table {
 	width: 100%;
 	border: 1px solid rgba(142, 142, 142, 1);
+	background-color: #d9d9d9;
+}
+
+thead {
+	background-color: #d9d9d9;
+}
+
+thead tr {
+	background-color: #d9d9d9;
+}
+
+tbody {
+	background-color: #ffffff;
 }
 
 .grey {

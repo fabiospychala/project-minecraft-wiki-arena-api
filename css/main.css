@@ -206,7 +206,7 @@ dialog {
 
 .card-main-body {
 	width: 80%;
-	background-color: #E6EFF4;
+	background-color: #e6eff4;
 }
 
 .yellow {
@@ -224,9 +224,9 @@ dialog {
 }
 
 .red {
-	background-color: #F5C2CD;
+	background-color: #f5c2cd;
 	border-left: solid 5px;
-	border-color: #BC5C70;
+	border-color: #bc5c70;
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -244,6 +244,10 @@ dialog {
 	font-style: SemiBold;
 }
 
+.onlyTabletAndMoreTab {
+	display: none;
+}
+
 @media screen and (width > 767px) {
 	.onlyMobile {
 		display: none;
@@ -257,7 +261,7 @@ dialog {
 		gap: 12px;
 	}
 
-	.onlyTabletAndMoretab {
+	.onlyTabletAndMoreTab {
 		display: block;
 	}
 

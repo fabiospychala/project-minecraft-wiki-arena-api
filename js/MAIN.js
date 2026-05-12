@@ -1,3 +1,5 @@
+const API = "http://10.69.4.208:3000/v1/";
+
 const $DiaMenu = document.querySelector("#Menu");
 const $BTNmenu = document.querySelector("#BTNmenu");
 const $body = document.querySelector("body");

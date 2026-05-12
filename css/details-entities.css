@@ -1,7 +1,15 @@
 h1 {
-  color:  #3A3A3A;
-  font-weight: 300;
-  font-style: Light;
-  font-size: 48px;
+	color: #3a3a3a;
+	font-weight: 300;
+	font-style: Light;
+	font-size: 48px;
 }
 
+.card-main-body {
+	padding: 26px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+	gap: 24px;
+}
