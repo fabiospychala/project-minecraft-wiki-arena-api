@@ -13,3 +13,58 @@ h1 {
 	justify-content: start;
 	gap: 24px;
 }
+
+div > label {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+input {
+	width: 80%;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 12px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+#page-explore-search-input {
+	width: 90%;
+}
+
+.foot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media screen and (width > 767px) {
+	.form {
+		display: flex;
+	}
+	.descption-page-explore-image {
+		display: flex;
+	}
+	.descption-page-explore {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: start;
+	}
+}
+@media screen and (width > 1023px) {
+
+}

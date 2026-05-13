@@ -122,7 +122,7 @@
 			<section class="card-main-body">
 				<article class="titre-arena-open">
 					<h1>Arena</h1>
-					<div class="open-or-close close">CLOSE</div>
+					<div class="open-or-close open close" id="div-close-or-open">CLOSE</div>
 				</article>
 				<p>
 					Choose an entity to spawn inside the
@@ -132,13 +132,14 @@
 					<div>
 						<div>
 							<h4>Entity</h4>
-							<select class="selectEntitie greyOnClose" name="entity" id="">
+							<select class="selectEntitie greyOnClose" name="entity" id="Entitieschoose">
 								<option value="">choose</option>
 							</select>
 						</div>
 						<div>
 							<h4>X Coordinate</h4>
 							<input
+								id="Xcoordinate"
 								class="INPnumber greyOnClose"
 								type="number"
 								placeholder="255.2"
@@ -148,6 +149,7 @@
 						<div>
 							<h4>Z Coordinate</h4>
 							<input
+							  id="Zcoordinate"
 								class="INPnumber greyOnClose"
 								type="number"
 								placeholder="126.7"
@@ -155,7 +157,7 @@
 							/>
 						</div>
 					</div>
-					<button class="BTNspawn greyOnClose">SPAWN</button>
+					<button class="BTNspawn open greyOnClose" id="BTNspawn">SPAWN</button>
 				</form>
 				<h3 class="titleH3">Arena entities</h3>
 				<hr class="hr" />
@@ -310,5 +312,6 @@
 			</section>
 		</dialog>
 		<script src="/js/main.js"></script>
+		<script src="/js/arena-close.js"></script>
 	</body>
 </html>

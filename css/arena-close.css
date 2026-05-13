@@ -77,10 +77,6 @@ td img {
 	background-color: rgba(242, 89, 89, 0.7);
 }
 
-.grey {
-	color: rgba(58, 58, 58, 1);
-}
-
 .open-or-close {
 	text-align: center;
 	padding: 4px 8px;
@@ -139,22 +135,6 @@ td img {
 	gap: 8px;
 	color: rgba(58, 58, 58, 1);
 	font-size: 14px;
-}
-
-.BTNspawn {
-	width: 180px;
-	padding: 8px 12px;
-	background-color: rgba(79, 140, 105, 1);
-	color: white;
-	border-radius: 9999px;
-	font-size: 22px;
-	font-weight: 700;
-}
-
-.INPnumber {
-	background-color: rgba(255, 255, 255, 1);
-	padding: 8px;
-	border-radius: 4px;
 }
 
 .selectEntitie {
