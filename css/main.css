@@ -131,7 +131,6 @@ dialog {
 }
 
 .LBLforSearch {
-	width: 25%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -140,6 +139,10 @@ dialog {
 	padding: 12px 16px;
 	border-radius: 9999px;
 	background-color: white;
+}
+
+header .LBLforSearch {
+	width: 25%;
 }
 
 .INPtext {
@@ -270,6 +273,10 @@ dialog {
 	border-radius: 9999px;
 	font-size: 22px;
 	font-weight: 700;
+}
+
+form .LBLforSearch {
+    width: 90%;
 }
 
 @media screen and (width > 767px) {

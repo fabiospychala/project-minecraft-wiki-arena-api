@@ -12,44 +12,44 @@ const tabOf = [
 ];
 
 document.addEventListener("DOMContentLoaded", async () => {
-	// arena = await arenaGet();
-	// entities = await arenaEntitieGet();
+	arena = await arenaGet();
+	entities = await arenaEntitieGet();
 
-	// transformPageByArenaStatus(arena.status);
-	// for (let i = 0; entities.length; i++) {
-	// 	createTabRow(
-	// 		entities[i].entity.icon,
-	// 		entities[i].entity.name,
-	// 		entities[i].x,
-	// 		entities[i].z,
-	// 		entities[i].entity.strength,
-	// 	);
-	// }
-	// console.log(entities);
-	// setInterval(async () => {
-	// 	arena = await arenaGet();
-	// 	transformPageByArenaStatus(arena.status);
-	// 	console.log(entities);
-	// 	for (let i = 0; entities.length; i++) {
-	// 		createTabRow(
-	// 			entities[i].entity.icon,
-	// 			entities[i].entity.name,
-	// 			entities[i].x,
-	// 			entities[i].z,
-	// 			entities[i].entity.strength,
-	// 			entities[i].id,
-	// 		);
-	// 	}
-	// }, "10000");
+	transformPageByArenaStatus(arena.status);
+	for (let i = 0; entities.length; i++) {
+		console.log(entities[i].entity.icon)
+		createTabRow(
+			entities[i].entity.icon,
+			entities[i].entity.name,
+			entities[i].x,
+			entities[i].z,
+			entities[i].entity.strength,
+		);
+	}
+	console.log(entities);
+	setInterval(async () => {
+		arena = await arenaGet();
+		transformPageByArenaStatus(arena.status);
+		console.log(entities);
+		for (let i = 0; entities.length; i++) {
+			createTabRow(
+				entities[i].entity.icon,
+				entities[i].entity.name,
+				entities[i].x,
+				entities[i].z,
+				entities[i].entity.strength,
+				entities[i].id,
+			);
+		}
+	}, "10000");
 
 	console.log(await PostByName());
 });
 
 async function arenaGet() {
-	const reponse = await fetch(API + "arena", {
-		method: "GET",
-	});
+	const reponse = await fetch(API + "arena")
 	const data = await reponse.json();
+	console.log(data)
 	return data;
 }
 
@@ -76,8 +76,8 @@ async function PostByName(name) {
 			"content-type": "application/json",
 		},
 		body: JSON.stringify({
-			entityId: 2,
-			x: 5,
+			entityId: 5,
+			x: 10,
 			z: 5,
 		}),
 	});
