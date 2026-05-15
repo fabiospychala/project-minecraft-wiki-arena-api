@@ -1,5 +1,5 @@
 const $tbody = document.querySelector("tbody");
-
+// console.log()
 let arena = "";
 let entities = "";
 
